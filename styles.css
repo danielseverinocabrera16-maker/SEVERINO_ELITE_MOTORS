@@ -1,0 +1,63 @@
+:root {
+  --bg-dark: #0d121c;
+  --bg-card: #111622;
+  --neon-cyan: #00d2ff;
+  --gold: #ffd700;
+  --orange-fire: #ff9800;
+  --text-white: #f8f9fa;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.navbar-glass {
+  background: rgba(13, 18, 28, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 210, 255, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1050;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+.hero-banner {
+  background: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, var(--bg-dark) 100%);
+  padding: 80px 0;
+  text-align: center;
+  border-bottom: 2px solid var(--neon-cyan);
+}
+.hero-banner h1 { color: var(--neon-cyan); font-weight: 900; text-shadow: 0 0 20px rgba(0, 210, 255, 0.5); }
+
+.card-premium {
+  background-color: var(--bg-card);
+  border: 1px solid #2a3143;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+.card-premium:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(0, 210, 255, 0.3);
+  border-color: var(--neon-cyan);
+}
+.vehiculo-img { width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid #2a3143; }
+.logo-marca { height: 30px; object-fit: contain; margin-bottom: 10px; }
+
+.price-gold { color: var(--gold); font-weight: bold; font-size: 1.1rem; }
+.price-orange { color: var(--orange-fire); font-weight: bold; }
+.title-cyan { color: var(--neon-cyan); font-weight: bold; }
+
+.modal-content.dark-premium {
+  background-color: var(--bg-card);
+  border: 1px solid var(--neon-cyan);
+  box-shadow: 0 0 30px rgba(0, 210, 255, 0.2);
+}
+.form-control.dark-input { background-color: #1a2235; border: 1px solid #334155; color: #fff; }
+.form-control.dark-input:focus { border-color: var(--neon-cyan); color: #fff; box-shadow: 0 0 10px rgba(0, 210, 255, 0.4); }
+
+.pdf-doc-root { background-color: #ffffff !important; color: #111111 !important; }
+.pdf-doc-root * { color: #333333 !important; }
+.pdf-doc-root h2, .pdf-doc-root h5, .pdf-doc-root strong, .pdf-doc-root th { color: #111111 !important; }
